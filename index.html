@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>qr code genrator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>QR Code Generator</title>
   </head>
 
   <body>
     <div class="container">
-      <h1>qr code genrator</h1>
+      <h1>QR Code Generator</h1>
       <div class="input">
         <input
           type="text"
-          placeholder="enter something to genrate code"
+          placeholder="Enter something to generate code"
           id="inp"
         />
       </div>
       <div class="btn">
-        <button onclick="myFun()">click to genrate</button>
+        <button onclick="myFun()">Click to generate</button>
+        <!-- Anchor tag for the download -->
+        <a id="download" style="display: none">
+          <i class="fa-solid fa-download"></i>
+        </a>
       </div>
       <img src="" alt="" id="img" />
       <p class="massage"></p>
